@@ -1,0 +1,106 @@
+.feed-container {
+  max-width: 600px;
+  margin: 0 auto; /* Center the feed on the page */
+}
+
+.post-form {
+  background-color: #3a3f4b;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.post-form textarea {
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  min-height: 80px;
+  background-color: #282c34;
+  border: 1px solid #555;
+  border-radius: 4px;
+  color: white;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  resize: vertical;
+}
+
+.post-form button {
+  background-color: #61dafb;
+  border: none;
+  color: #282c34;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  float: right; /* Position button to the right */
+}
+
+.post-form button:hover {
+  background-color: #53c2e6;
+}
+
+.post {
+  background-color: #3a3f4b;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.post strong {
+  color: #61dafb; /* A nice highlight color for the author */
+}
+
+.post p {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  white-space: pre-wrap; /* Respects line breaks in the text */
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.form-actions input[type="file"] {
+  color: #ccc;
+  font-size: 0.8rem;
+}
+
+.file-input-label {
+  background-color: #555;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.file-input-label:hover {
+  background-color: #777;
+}
+
+.file-name {
+  margin-left: 1rem;
+  font-size: 0.8rem;
+  color: #ccc;
+  font-style: italic;
+}
+
+/* Light Mode Specific Styles for Post Form */
+[data-mantine-color-scheme="light"] .post-form {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+}
+
+[data-mantine-color-scheme="light"] .post-form h3 {
+  color: #000000;
+}
+
+[data-mantine-color-scheme="light"] .post-form textarea {
+  background-color: #f8f9fa; /* A slightly off-white for the input */
+  color: #000000;
+  border-color: #ced4da;
+}

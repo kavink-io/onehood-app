@@ -1,0 +1,72 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "author": "John Smith",
+      "content": "Hello OneHood! ",
+      "imageUrl": null
+    },
+    {
+      "id": "92df",
+      "author": "You",
+      "content": "Hi, hello",
+      "imageUrl": null
+    },
+    {
+      "id": "fff9",
+      "author": "Kavin K",
+      "content": "Ji",
+      "imageUrl": null
+    },
+    {
+      "id": "ad8e",
+      "author": "Tester",
+      "content": "Hello dude",
+      "imageUrl": null
+    }
+  ],
+  "marketplaceItems": [
+    {
+      "id": "1",
+      "itemName": "Used Bicycle",
+      "description": "A 10-speed road bike in good condition. Some minor scratches but rides perfectly.",
+      "price": "15000",
+      "sellerName": "John Smith",
+      "imageUrl": "https://images.unsplash.com/photo-1559348349-3672b6a0a9de?w=600"
+    },
+    {
+      "id": "2",
+      "itemName": "Floor Lamp",
+      "description": "Modern style floor lamp with a warm LED bulb included.",
+      "price": "3000",
+      "sellerName": "Jane Doe",
+      "imageUrl": "https://images.unsplash.com/photo-1594026112272-cb454b0c441b?w=600"
+    }
+  ],
+  "events": [
+    {
+      "id": "1",
+      "eventName": "Community Cleanup Day",
+      "eventDate": "2025-10-25",
+      "eventTime": "09:00",
+      "description": "Let's get together to clean up the park and common areas. Gloves and bags will be provided.",
+      "postedBy": "John Smith"
+    },
+    {
+      "id": "2",
+      "eventName": "Annual Diwali Celebration",
+      "eventDate": "2025-11-01",
+      "eventTime": "18:30",
+      "description": "Join us for a festival of lights with sweets, music, and fireworks in the community hall.",
+      "postedBy": "Jane Doe"
+    },
+    {
+      "id": "a60f",
+      "eventName": "Outing",
+      "eventDate": "2025-10-08",
+      "eventTime": "16:53",
+      "description": "Outing with friends",
+      "postedBy": "Kavin K"
+    }
+  ]
+}

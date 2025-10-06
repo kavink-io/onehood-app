@@ -1,0 +1,112 @@
+.post {
+  position: relative;
+  /* This variable will be a dark color in dark mode and white in light mode */
+  background-color: var(--mantine-color-body);
+  padding: 1rem;
+  border-radius: var(--mantine-radius-md); /* Use theme radius */
+  margin-bottom: 1rem;
+  border: 1px solid var(--mantine-color-default-border);
+  box-shadow: var(--mantine-shadow-sm); /* Use theme shadow */
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.post-header strong {
+  color: var(--mantine-color-blue-6);
+}
+
+.post-actions button {
+  margin-left: 0.5rem;
+}
+
+.post-content p {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  white-space: pre-wrap;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 1.5rem;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+}
+
+.delete-button:hover {
+  color: white;
+}
+
+.edit-button, .save-button, .cancel-button {
+  background: none;
+  border: 1px solid #555;
+  color: #ccc;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.edit-button:hover, .save-button:hover, .cancel-button:hover {
+  background-color: #4a505f;
+}
+
+.edit-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 80px;
+  background-color: #282c34;
+  border: 1px solid #555;
+  border-radius: 4px;
+  color: white;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.edit-form-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.post-image {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+/* Add this class to your Post.css file */
+
+.post-media {
+  width: 100%; /* Makes the media span the full width of the post card */
+  max-height: 600px; /* Prevents very tall images/videos from taking over the screen */
+  height: auto; /* Maintains the original aspect ratio */
+  object-fit: cover; /* This is the key property! */
+  border-radius: 8px; /* Matches the card's border radius */
+  margin-top: 1rem; /* Adds space between the text and the media */
+}
+
+/* Add a smooth transition to the base button styles */
+.edit-button, .delete-button {
+  transition: all 0.2s ease;
+}
+
+/* Edit button hover effect */
+.edit-button:hover {
+  background-color: #4a505f; /* Lighter gray for dark mode */
+}
+[data-mantine-color-scheme="light"] .edit-button:hover {
+  background-color: #e9ecef; /* Darker gray for light mode */
+}
+
+/* Delete button hover effect (works in both modes) */
+.delete-button:hover {
+  color: #fa5252; /* A nice red color */
+  transform: scale(1.2); /* Slightly enlarges the '×' */
+}

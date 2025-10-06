@@ -1,0 +1,77 @@
+.navbar {
+  padding: 1rem 2rem; /* Added more horizontal padding */
+  background-color: #333;
+  color: white;
+  border-bottom: 1px solid #555;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-brand h2 {
+  margin: 0;
+}
+
+/* This is the main fix */
+.navbar-links {
+  display: flex;         /* Arrange items in a row */
+  align-items: center;   /* Vertically align everything */
+  gap: 1.5rem;           /* Add 1.5rem of space BETWEEN each item */
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+/* Added to style the welcome message */
+.navbar-links span {
+  color: #ccc; /* A slightly dimmer color to differentiate */
+  font-size: 0.9rem;
+}
+
+/* Added to make the logout look like a button */
+.logout-button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.logout-button:hover {
+  background-color: #777;
+}
+
+/* Light Mode Specific Styles for Navbar */
+[data-mantine-color-scheme="light"] .navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dee2e6; /* A subtle border for separation */
+}
+
+[data-mantine-color-scheme="light"] .navbar-brand,
+[data-mantine-color-scheme="light"] .navbar-links a,
+[data-mantine-color-scheme="light"] .navbar-links span {
+  color: #000000;
+}
+
+[data-mantine-color-scheme="light"] .logout-button {
+  background-color: #f1f3f5;
+  color: #000000;
+}
+
+[data-mantine-color-scheme="light"] .logout-button:hover {
+  background-color: #e9ecef;
+}

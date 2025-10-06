@@ -1,0 +1,190 @@
+.marketplace-item {
+  background-color: #3a3f4b;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.item-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.item-details {
+  padding: 1rem;
+  width: 100%;
+}
+
+.item-name {
+  margin: 0 0 0.5rem 0;
+  color: #61dafb;
+}
+
+.item-price {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.item-description {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.item-seller {
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-top: 1rem;
+}
+
+.seller-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.seller-actions button {
+  background: none;
+  border: 1px solid #555;
+  color: #ccc;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.edit-mode {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.edit-mode input, .edit-mode textarea {
+  background-color: #282c34;
+  border: 1px solid #555;
+  border-radius: 4px;
+  color: white;
+  padding: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.edit-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.save-btn, .cancel-btn {
+   background-color: #4a505f;
+   border: none;
+   color: white;
+   padding: 0.4rem 0.8rem;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+.item-gallery {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  flex-shrink: 0;
+  width: 250px; /* Give the gallery a fixed width */
+  scroll-snap-type: x mandatory; /* Makes scrolling snap to each image */
+}
+
+.item-media {
+  width: 250px; /* Each media item takes the full width of the gallery */
+  height: 200px; /* Give a fixed height */
+  object-fit: cover;
+  flex-shrink: 0;
+  scroll-snap-align: start; /* Snap alignment */
+}
+
+/* Update the main item layout to be vertical on small screens */
+.marketplace-item {
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .marketplace-item {
+    flex-direction: row; /* Back to horizontal layout on larger screens */
+  }
+}
+
+/* Add these styles to the bottom of the file */
+
+.contact-btn {
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.contact-details {
+  background-color: #282c34;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.contact-details p {
+  margin: 0.5rem 0;
+}
+
+/* Light Mode Styles for Individual Item Cards */
+[data-mantine-color-scheme="light"] .marketplace-item {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+}
+
+[data-mantine-color-scheme="light"] .item-description {
+  color: #495057; /* Dark gray for body text */
+}
+
+[data-mantine-color-scheme="light"] .item-seller {
+  color: #868e96; /* Lighter gray for secondary text */
+}
+
+/* Also style the edit form inside the card for light mode */
+[data-mantine-color-scheme="light"] .edit-mode input, 
+[data-mantine-color-scheme="light"] .edit-mode textarea {
+    background-color: #f8f9fa;
+    color: #000000;
+    border-color: #ced4da;
+}
+
+/* Light Mode Styles for Contact Details Box */
+[data-mantine-color-scheme="light"] .contact-details {
+  background-color: #f1f3f5; /* A light gray background */
+  border: 1px solid #e9ecef;
+}
+
+[data-mantine-color-scheme="light"] .contact-details p {
+  color: #212529; /* Dark text for readability */
+}
+
+[data-mantine-color-scheme="light"] .contact-details strong {
+  color: #000000;
+}
+
+/* Add a smooth transition to the base button styles */
+.seller-actions button {
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+/* Edit button hover effect */
+.seller-actions button:hover {
+  background-color: #4a505f;
+}
+[data-mantine-color-scheme="light"] .seller-actions button:hover {
+  background-color: #e9ecef;
+}

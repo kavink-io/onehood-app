@@ -1,0 +1,133 @@
+.event-item {
+  background-color: #3a3f4b;
+  border-radius: 8px;
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+}
+.event-date-card {
+  background-color: #282c34;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  min-width: 80px;
+  align-self: flex-start;
+}
+.month {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #aaa;
+}
+.day {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1;
+  margin-top: 0.25rem;
+  color: #61dafb;
+}
+.event-details {
+  width: 100%;
+}
+.event-name { margin: 0; }
+.event-time { font-size: 0.9rem; color: #ccc; margin: 0.25rem 0 1rem 0; }
+.event-description { font-size: 1rem; margin-bottom: 1rem; }
+.event-poster { font-size: 0.8rem; color: #aaa; margin: 0; }
+
+/* Styles for action buttons and edit form */
+.author-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.author-actions button {
+  background: none;
+  border: 1px solid #555;
+  color: #ccc;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.event-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.event-edit-form input, .event-edit-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #282c34;
+  border: 1px solid #555;
+  border-radius: 4px;
+  color: white;
+  padding: 0.5rem;
+}
+
+.edit-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.save-btn, .cancel-btn {
+   background-color: #4a505f;
+   border: none;
+   color: white;
+   padding: 0.4rem 0.8rem;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+/* Light Mode Styles for Individual Event Cards */
+[data-mantine-color-scheme="light"] .event-item {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+}
+
+[data-mantine-color-scheme="light"] .event-date-card {
+  background-color: #f1f3f5;
+}
+
+[data-mantine-color-scheme="light"] .month {
+  color: #868e96;
+}
+
+[data-mantine-color-scheme="light"] .event-name {
+  color: #000000;
+}
+
+[data-mantine-color-scheme="light"] .event-time,
+[data-mantine-color-scheme="light"] .event-description {
+  color: #495057;
+}
+
+[data-mantine-color-scheme="light"] .event-poster,
+[data-mantine-color-scheme="light"] .event-poster strong {
+  color: #868e96;
+}
+
+/* Also style the edit form inside the card */
+[data-mantine-color-scheme="light"] .event-edit-form input, 
+[data-mantine-color-scheme="light"] .event-edit-form textarea {
+    background-color: #f8f9fa;
+    color: #000000;
+    border-color: #ced4da;
+}
+
+/* Add a smooth transition to the base button styles */
+.author-actions button {
+  transition: background-color 0.2s ease;
+}
+
+/* Edit/Delete button hover effect */
+.author-actions button:hover {
+  background-color: #4a505f;
+}
+[data-mantine-color-scheme="light"] .author-actions button:hover {
+  background-color: #e9ecef;
+}
